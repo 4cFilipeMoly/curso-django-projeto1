@@ -2,13 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return render(request, 'recipes/home.html', context={
-        'name': 'Filipe Molinari'
-    })
-
-def sobre(request):
-    return render(request, 'me-apague/temp.html')
+    return render(request, 'recipes/home.html')
 
 def contato(request):
-    return HttpResponse("Página Contato")   
+    return HttpResponse("Página Contato") 
+
+def sobre(request):
+    return HttpResponse("sobre")   
+
+  
 
